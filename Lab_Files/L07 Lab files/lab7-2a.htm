@@ -15,7 +15,13 @@ function emailTest(form)  {
 
 
 //Replace it with this new emailTest() function
-
+function emailTest(form)  {
+	if (form.email_address.value.indexOf("@", 0) < 2) {
+		alert("This is not a valid e-mail address!");
+	} else {
+		alert("This could be a valid e-mail address");
+	}
+}
 
 
 function emailTest(form)  {
