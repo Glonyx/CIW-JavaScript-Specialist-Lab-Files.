@@ -20,6 +20,24 @@ function changeButton()
 	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
 	alert("Hello " + header);
   }
+  if(document.getElementById('radiobuttonCars').checked === true)
+  {
+	radioButton = document.getElementById('radiobuttonCars').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Ling's Cars!";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('radiobuttonGeo').checked === true)
+  {
+	radioButton = document.getElementById('radiobuttonGeo').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Find the World!";
+	alert("Hello " + header);
+  }
+  if(document.getElementById('radiobuttonWatch').checked === true)
+  {
+	radioButton = document.getElementById('radiobuttonWatch').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Google!";
+	alert("Hello " + header);
+  }
   getTest();
 }
 -->
@@ -33,9 +51,9 @@ function changeButton()
 <p>Please select your favorite type of Web site:</p>
 <input id="radiobuttonWebdev" type="radio" name="group1" value="Web_Development" checked>Web Development</input><br />
 <input id="radiobuttonGovernment" type="radio" name="group1" value="Government">U.S. Government</input><br />
-<input id="a" type="radio" name="group1" value="A">A</input><br />
-<input id="b" type="radio" name="group1" value="B">B</input><br />
-<input id="c" type="radio" name="group1" value="C">C</input><br />
+<input id="radiobuttonCars" type="radio" name="group1" value="Cars">Car Leasing</input><br />
+<input id="radiobuttonGeo" type="radio" name="group1" value="Geo">Geography Game</input><br />
+<input id="radiobuttonWatch" type="radio" name="group1" value="Video">Streaming Site</input><br />
 
 
 <script type="text/javascript">
@@ -53,6 +71,21 @@ function getTest()
   if(radioButton == "Government")
   {
 	document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
+  }
+
+  if(radioButton == "Cars")
+  {
+	document.write("<p>Here's a great site if you're interested in Car Leasing:</p><a href=https://www.LINGsCARS.com/>Ling's Cars</a>");
+  }
+
+  if(radioButton == "Geo")
+  {
+	document.write("<p>Here's a great site if you're interested in Geography Games:</p><a href=http://www.geoguessr.com/>Geoguessr</a>");
+  }
+
+  if(radioButton == "Video")
+  {
+	document.write("<p>Here's a great site if you're interested in Streaming Sites:</p><a href=http://www.youtube.com/>YouTube</a>");
   }
 }
 -->
